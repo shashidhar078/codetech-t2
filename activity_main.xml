@@ -1,0 +1,60 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBackground">
+
+    <!-- Input for Height -->
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter your height in meters (e.g. 1.70 m)"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorTextHint"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input for Weight -->
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter your weight in kg"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorTextHint"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to calculate BMI -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView to display BMI result -->
+    <TextView
+        android:id="@+id/bmiResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your BMI: "
+        android:textSize="18sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView to display interpretation -->
+    <TextView
+        android:id="@+id/bmiInterpretationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
